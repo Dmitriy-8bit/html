@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Dima Buz">
+        <meta name="description" content="This page contains all the things I am learning how to create as i learn HTML">
+        <title>My First Web Page</title>
+        <link rel="icon" href="48x44.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">       
+    </head>
+
+    <body>
+        <header> <!--Semantic_Element.ВерхнийЕлемент.МожетБытьТолько_1-->        
+            <h1>Hello World!</h1>
+            <hr>
+            <nav aria-labelledby="primary-navigation">
+                <h2 id="primary-navigation">Primary Navigation</h2>
+                <ul>    
+                    <li>
+                            <a href="#html">Learning HTML</a> <!--Переход на елемент #html в документе с названием строки "Learning HTML"-->
+                    </li>
+                </ul>
+            </nav>
+        </header>            
+        
+        <main> <!--Semantic_Element.МожетБыть >1 main елемента,тогда лучше называть их по разному-->
+            <article id="article1">
+                <hr>
+                <section id="html">
+                    <aside>
+                        <details>
+                            <sammary> <!--НазваниеОткрывающегоСписка(трикутник):-->
+                                <h2>I am ready to learn HTML</h2>
+                            </sammary>
+                            <!--А это_Все_Внутри открывающегосяСписка<summary.И до section аж следующей будет в откр.списке : -->
+                            <p>I start at <time datetime="08:00">8 am</time>
+                                and i write code for<time datetime="PT3H">3 hours</time>
+                                              <!--Атрибут_datetime="PT3H"НуженСамомуКодуДляБраузераДляЛогики-->  
+                            </p>                         
+                            <h3>Daily Schedule</h3>
+                            <p>Monday Thursday...
+                                <br>&nbsp;&nbsp;Неразрывный пробел=nbsp;
+                                <br>...I Plan...
+                            </p>
+                            <hr>
+                            <h2>I am also planing a Vacation</h2>
+                            <p><strong>I'have</strong> <em>been working hard..</em></p>
+                            <hr>
+                            &lt;&lt;&lt; &copy; Somebody &gt;&gt;&gt; <code>& lt;& lt;& lt;& copy;Somebody& gt;& gt;& gt;</code>
+                            <hr>
+                            <p>
+                                <abbr title="Mozilla Developer Network">MDN</abbr> <!--this is abbreviation element <code>< abbr title="Mozila...">MDN< /abbr></code> -->>         
+                            </p>
+                            <hr>
+                            <p>
+                                This is simple text url: https:google.com.ua
+                            </p>
+                            <address>
+                                Some address под наклоном <!-- <address>Some address</address> -->
+                            </address>
+                         </details>
+                    </aside>    
+                </section>
+            </article>
+            <hr>        
+
+            <article id="vacation">
+                <section id="1">                    
+                    <!--CommentInCodeText  <code>= показать код юзеру  Ctrl+U to view code</code> -->
+                    <hr>
+                    Unordered HTML List
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+                 </section>
+                <hr>
+
+                <section id="2">
+                    Ordered HTML List
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                    <hr>
+                </section>
+                
+                <section id="3">
+                    HTML Description Lists
+                    <dl>
+                        <dt>Coffee</dt>
+                        <dd>- black hot drink</dd>
+                        <dt>Milk</dt>
+                        <dd>- white cold drink</dd>
+                    </dl>
+                    <hr>
+                    ADD LINKS
+                    <br> <a href="https://developer.mozilla.org/ru/docs/Web/HTML">MDN/HTML</a>
+                    <br>
+                    &lt;&lt;&lt; &copy; <a href="about.html">About HTML</a>
+                    <hr>
+                    <p>
+                        <a href="#">Back to Top</a> 
+                    </p>
+                    <img src="img/1.png" alt="No logo in source" title="WhenCursorDropHereThisTextShown" width="25%" height="25%">
+                    <p>Another image:</p>
+                    <figure>
+                        <img src="img/2.jpg" alt="IfNoPicInSrcFolder" title="WhenCursorDropHereThisTextShown" width="25%" height="25%" loading="lazy">
+                        <figcaption>
+                            Описание под скриншотом 
+                        </figcaption>
+                    </figure>
+                </section>
+            </article>
+        </main> 
+        
+        <footer>
+             <p>
+                Paragraph
+             </p>
+        </footer>
+
+
+    </body>
+</html>
